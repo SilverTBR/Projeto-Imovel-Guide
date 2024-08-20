@@ -1,0 +1,108 @@
+*{
+    font-family: Arial;
+    font-size: 15px;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    gap: 30px;
+   
+}
+
+.mult_campo{
+    display: flex;
+    gap: 10px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 50%;
+}
+
+input{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 30px;
+
+}
+input::placeholder{
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.cpf{
+    flex: 0.3;
+}
+
+.creci{
+    flex: 1;
+}
+
+button{
+    background-color: rgb(54,63,74);
+    border: 0;
+    color: white;
+    padding: 5px 0px 5px 0px ;
+    cursor: pointer;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 10px;
+}
+
+.Aviso {
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.Aviso.sucesso {
+    background-color: green;
+}
+
+.Aviso.falha {
+    background-color: red;
+}
+
+.edita{
+    background-color: blue;
+}
+
+.delete{
+    background-color: red;
+}
+
+.edita,
+.delete {
+    width: 100%; 
+    padding: 8px; 
+}
+
+td button {
+    padding: 0;
+}
+
+.hidden{
+    display: none;
+}

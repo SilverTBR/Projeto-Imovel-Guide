@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/indexStyle.css" rel="stylesheet">
+    <title>Cadastro de corretor</title>
+</head>
+<body>
+    <main>
+        <h2 id="Titulo">Cadastro de Corretor</h2>
+        <div class="formulario" id="cadastroForm">
+            <div class="Aviso hidden" id="Aviso">
+                <span id="textoAviso"></span>
+            </div>
+            <div class="mult_campo">
+                <input placeholder="Digite seu CPF" class="cpf" maxlength="11" id="CPF" minlength="11"/>
+                <input placeholder="Digite seu Creci" class="creci" minlength="2" id="Creci"/>
+            </div>
+            <input placeholder="Digite o seu nome" minlength="2" id="Nome">
+            <input  class="hidden" id="id" value="">
+            <button id="cadastrar" type="submit">Enviar</button>
+        </div>
+
+
+        <div>
+            <table id="tabela">
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Creci</th>
+                    <th>CPF</th>
+                    <th>Edição</th>
+                    <th>Exclusão</th>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script src="java/script.js"></script>
+
+</body>
+</html>
